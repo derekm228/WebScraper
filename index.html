@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+<body onload="checkFileAPI();">
+    <div id="container">
+        <input type="file" onchange='readText(this)' />
+        <br />
+        <hr />
+        <h3>Tags:</h3>
+        <ul id="tags"></ul>
+        <br />
+        <hr />
+        <h3>Contents of the Text file:</h3>
+        <div id="main">
+            ...
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
