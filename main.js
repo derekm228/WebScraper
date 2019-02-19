@@ -148,10 +148,9 @@ function autoCat() {
           
         //console.log(entities);
         uniqueNames.forEach(entity => {
-          $("#tags").append("<li>" + entity + "</li>");
+          $("#tags").append("<li><a target='_blank' href='http://en.wikipedia.org/wiki/" + entity + "'>" + entity + "</a></li>");
         })
 
-        $("#main").html("");
     });
 }
 

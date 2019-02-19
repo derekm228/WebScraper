@@ -3,14 +3,33 @@
 <!-- Test -->
 <head>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+        li {
+            display: inline-block;
+            border-radius: 5px;
+            background-color: #307fe2;
+            color: white;
+            margin: 0px 10px 10px 10px;
+            padding: 5px 10px 5px 10px;
+        }
+        body {
+            background-color:white;
+        }
+        a {
+            color:white !important;
+        }
+    </style>
 </head>
 
 <body onload="checkFileAPI();">
     <div id="container">
+        <h3>Please upload a file less than 2MB</h3>
         <input type="file" onchange='readText(this)' />
         <br />
         <hr />
-        <h3>Tags:</h3>
+        <h3>Tags</h3>
+        <p>This includes companies and organizations. All tags are coming in, even ones with lower scores. </p>
+        <p>For some reason "SS&C Technologies" doesn't return in some articles, but "C Technologies" does. This definitely has to do with encoding, though I haven't found the right solution yet.</p>
         <ul id="tags"></ul>
         <br />
         <hr />
