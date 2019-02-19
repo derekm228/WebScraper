@@ -27,9 +27,9 @@
         <input type="file" onchange='readText(this)' />
         <br />
         <hr />
-        <h3>Tags</h3>
+        <h3>Tags from TextRazor</h3>
         <p>This includes companies and organizations. All tags are coming in, even ones with lower scores. </p>
-        <p>For some reason "SS&C Technologies" doesn't return in some articles, but "C Technologies" does. This definitely has to do with encoding, though I haven't found the right solution yet.</p>
+        <p>For some reason "SS&C Technologies" doesn't return in some articles, but "C Technologies" does. This definitely has to do with encoding, though I haven't found the right solution yet. I'm currently taking the $.html() and encoding it into UTF-8 which the API says to do.</p>
         <ul id="tags"></ul>
         <br />
         <hr />
